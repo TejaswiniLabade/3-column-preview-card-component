@@ -91,9 +91,11 @@ p {
   font-size: 11px;
   text-align: center;
   color: hsl(0, 0%, 0%);
+  background-color: #fff;
   position: fixed;
   left: 0;
-  bottom: 2em;
+  bottom: 0;
+  padding: 2em 0;
   width: 100%;
 }
 
