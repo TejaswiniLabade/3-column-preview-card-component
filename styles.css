@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  letter-spacing: 1.5px;
+  font-size: 2.25rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.main-container > * {
+  flex-basis: 100%;
+}
+
+.bg-orange {
+  background-color: hsl(31, 77%, 52%);
+  padding: 3em;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.bg-green {
+  background-color: hsl(184, 100%, 22%);
+  padding: 3em;
+}
+
+.bg-darkgreen {
+  background-color: hsl(179, 100%, 13%);
+  padding: 3em;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.9em 2em;
+  border-radius: 3.5rem;
+  margin-top: 4em;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.sedans-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  position: fixed;
+  left: 0;
+  bottom: 2em;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(263, 62%, 39%);
+}
+
+@media (max-width: 64rem) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 88%;
+    padding: 4rem 0;
+  }
+
+  .bg-orange {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .bg-darkgreen {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
